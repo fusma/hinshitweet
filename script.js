@@ -94,9 +94,23 @@ function processReturn(json) {
 //ツイートボタンの実装
 function tweet() {
   let text = document.getElementById("output").innerHTML;
+  if (text == "") {
+    return;
+  }
   text += "%0a%0a%23品詞暴言メーカー%20%0ahttps://fusma.github.io/hinshitweet/";
 
   let url = "https://twitter.com/intent/tweet?text=" + text;
   //新規ウィンドウでツイートボタンを開く
   window.open(url, "_blank");
+}
+
+//クリップボードにコピー
+function copy2clipboard() {
+  let text = document.getElementById("output").innerHTML;
+  if (text == "") {
+    return;
+  }
+  let textarea = document.getElementById("output");
+  textarea.select();
+  document.execCommand("copy");
 }

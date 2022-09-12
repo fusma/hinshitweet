@@ -18,18 +18,19 @@
     <button onclick="sendAPI()">品詞にする！</button>
     <textarea readonly type="text" id="output" placeholder="結果"></textarea>
     <button id="tweetButton" onclick="tweet()">Tweet</button>
-    <button id="copy2clipboard">クリップボードにコピー</button>
+    <button id="copy2clipboard" onclick="copy2clipboard()">クリップボードにコピー</button>
     <br><br>
     <!--折りたたみリスト-->
-    <details>
+    <details open>
         <summary>information</summary>
         <p>・形態素解析には、<a href="https://labs.goo.ne.jp/api/jp/morphological-analysis/">goo 形態素解析API</a>を使用しています。<br>
             見やすさを優先するため、一部結果を改変しています。</p>
+        <p>・元動画にならい、記号類はそのまま表示しています。</p>
         <p>・入力された本文はどこにも保存しておらず、ツイートのURLからも本文は分かりませんが、本サービスによって発生したいかなる損害についても当方は責任を負いません。</p>
         <p>Respect:QuizKnock <a
                 href="https://www.youtube.com/watch?v=8zjDhQC4MLQ">https://www.youtube.com/watch?v=8zjDhQC4MLQ</a></p>
-        <p>発案:Sma(<a href="https://twitter.com/gouwanowan">@gouwanowan</a><br>
-            作成:フスマ(<a href="https://twitter.com/openkinako">@gouwanowan</a>)</p>
+        <p>発案:Sma(<a href="https://twitter.com/gouwanowan">@gouwanowan</a>)<br>
+            制作:フスマ(<a href="https://twitter.com/openkinako">@openkinako</a>)</p>
 
     </details>
 </body>

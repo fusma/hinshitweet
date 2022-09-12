@@ -48,7 +48,13 @@ function processReturn(json) {
     "PreHour",
     "PostHour",
   ];
-  const ignores = ["英語接尾辞", "動詞接尾辞", "形容詞接尾辞", "接続接尾辞"];
+  const ignores = [
+    "英語接尾辞",
+    "名詞接尾辞",
+    "動詞接尾辞",
+    "形容詞接尾辞",
+    "接続接尾辞",
+  ];
   const conversion = {
     動詞語幹: "動詞",
     形容詞語幹: "形容詞",

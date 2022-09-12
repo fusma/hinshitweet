@@ -12,13 +12,13 @@
 
 <body>
     <h1>品詞暴言メーカー</h1>
-    <p>品詞でツイートしよう</p>
+    <p>暴言を品詞にしてやさしいインターネットにしよう</p>
 
     <textarea type="text" id="input" placeholder="暴言を入力してください">暴言を入力してください</textarea>
     <button onclick="sendAPI()">品詞にする！</button>
     <textarea readonly type="text" id="output" placeholder="結果"></textarea>
-    <button>Tweet</button>
-    <button>クリップボードにコピー</button>
+    <button id="tweetButton" onclick="tweet()">Tweet</button>
+    <button id="copy2clipboard">クリップボードにコピー</button>
 </body>
 
 </html>
